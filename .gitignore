@@ -136,3 +136,6 @@ dmypy.json
 
 # Cython debug symbols
 cython_debug/
+*/MY_SITE.py
+*test_browsers/geckodriver.log*
+*/*pycahe*/
