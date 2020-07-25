@@ -15,5 +15,6 @@ def test_browser(browser_check, url_check):
         wd = webdriver.Firefox(firefox_options=options)
         wd.get(url_check)
         wd.quit()
-
+    else:
+        raise Exception("Wrong browser parameter")
 
