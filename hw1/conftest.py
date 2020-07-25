@@ -1,12 +1,14 @@
-from selenium import webdriver
-import time
 import pytest
 
 
+def pytest_addoption(parser):
+    parser.addoption(
+        "--b",
+        action='store',
+        default='chrome',
+        help='Chose browser you want to use. Chrome or FireFox')
+
+
 @pytest.fixture
-def test_driver(request):
-    wd = webdriver.Chrome()
-    wd.get(request)
-    time.sleep(2)
-
-
+def browser_check(request):
+    return request.config.getoption("--b")
