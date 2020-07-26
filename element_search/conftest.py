@@ -1,4 +1,6 @@
 import pytest
+# from selenium_tests.test_browsers.MY_SITE import MY_SITE
+from selenium import webdriver
 
 
 def pytest_addoption(parser):
@@ -11,16 +13,20 @@ def pytest_addoption(parser):
     parser.addoption(
         '--url',
         action='store',
-        default='http://192.168.0.102',
+        default="http://192.168.0.102",
         help='Url for tests'
     )
 
 
-@pytest.fixture(params=['chrome','safari','firefox'])
-def browser_select(request):
-    return request.getoption('--b')
-
-
 @pytest.fixture
-def url_select(request):
-    return request.getoption('--url')
+def browser_select(request):
+    from selenium.webdriver.common.keys import Keys
+    param = request.config.getoption("--b")
+    if param == 'chrome':
+        wd = webdriver.Chrome()
+    elif param == 'firefox':
+        wd = webdriver.Firefox()
+    else:
+        raise Exception("Browser is supported")
+    wd.get(request.config.getoption("--url"))
+    return wd
