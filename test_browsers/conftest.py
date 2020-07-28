@@ -1,4 +1,5 @@
 import pytest
+from MY_SITE import MY_SITE
 
 
 def pytest_addoption(parser):
@@ -10,7 +11,7 @@ def pytest_addoption(parser):
     parser.addoption(
         "--url",
         action='store',
-        default="http://192.168.0.102/index.php",
+        default=MY_SITE,
         help='URL'
     )
 

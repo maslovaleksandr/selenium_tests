@@ -1,5 +1,4 @@
 import pytest
-# from selenium_tests.test_browsers.MY_SITE import MY_SITE
 from selenium import webdriver
 
 
@@ -20,7 +19,6 @@ def pytest_addoption(parser):
 
 @pytest.fixture
 def browser_select(request):
-    from selenium.webdriver.common.keys import Keys
     param = request.config.getoption("--b")
     if param == 'chrome':
         wd = webdriver.Chrome()

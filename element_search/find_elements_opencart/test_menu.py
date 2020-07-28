@@ -10,3 +10,4 @@ def test_drop_down_menu(browser_select):
         action.move_to_element(element).pause(0.5)
         action.perform()
     wd.quit()
+

@@ -115,3 +115,7 @@
 1595694303971	Marionette	INFO	Listening on port 56529
 1595694304026	Marionette	WARN	TLS certificate errors will be ignored for this session
 1595694305589	Marionette	INFO	Stopped listening on port 56529
+1595711964284	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "--kiosk" "-foreground" "-no-remote" "-profile" "/var/folders/_1/sp6k9s2n59x_btbfrjqt1rh80000gn/T/rust_mozprofile8CziFP"
+1595711968762	Marionette	INFO	Listening on port 50433
+1595711968792	Marionette	WARN	TLS certificate errors will be ignored for this session
+1595711969646	Marionette	INFO	Stopped listening on port 50433
