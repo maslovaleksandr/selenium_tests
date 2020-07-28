@@ -1,8 +1,8 @@
     # Byte-compiled / optimized / DLL files
-__pycache__/
+__pycache__
 *.py[cod]
 *$py.class
-
+geckodriver*
 # C extensions
 *.so
 
@@ -137,5 +137,5 @@ dmypy.json
 # Cython debug symbols
 cython_debug/
 */MY_SITE.py
-*test_browsers/geckodriver.log*
 */*pycahe*/
+*/*pytest_cache/*
