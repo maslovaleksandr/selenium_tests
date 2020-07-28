@@ -1,1 +1,1 @@
-# selenium_tests
+#**Selenium tests for OpenCart**
