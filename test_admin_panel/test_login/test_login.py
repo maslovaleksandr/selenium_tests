@@ -18,7 +18,7 @@ def test_login(browser):
             until(EC.presence_of_element_located((By.CSS_SELECTOR, LoginPage.password_input)))
         login.send_keys(USER)
         password.send_keys(PASSWORD)
-        password.send_keys(Keys.RETURN)
+        password.submit()
         time.sleep(5)
         driver.quit()
     except TimeoutException:

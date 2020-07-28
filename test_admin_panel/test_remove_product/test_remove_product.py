@@ -17,7 +17,7 @@ def test_remove_product(browser):
         password = driver.find_element(By.CSS_SELECTOR, LoginPage.password_input)
         username.send_keys(USER)
         password.send_keys(PASSWORD)
-        password.send_keys(Keys.RETURN)
+        password.submit()
         try:
             catalog = WebDriverWait(driver, 5)\
                 .until(EC.presence_of_element_located((By.ID, ProductsPage.Catalog)))
