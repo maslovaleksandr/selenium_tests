@@ -139,3 +139,4 @@ cython_debug/
 */MY_SITE.py
 */*pycahe*/
 */*pytest_cache/*
+.idea

@@ -5,9 +5,9 @@ import pytest
 def pytest_addoption(parser):
     parser.addoption(
         "--b",
-        action="store",
-        default="chrome",
-        help="Chose your browser"
+        action = "store",
+        default = "chrome",
+        help = "Chose your browser"
     )
 
 
@@ -20,6 +20,6 @@ def browser(request):
     elif param == "firefox":
         wd = webdriver.Firefox()
     else:
-        raise Exception("Browser is do not supported")
+        raise("Browser is not supported")
     wd.implicitly_wait(5)
     return wd
