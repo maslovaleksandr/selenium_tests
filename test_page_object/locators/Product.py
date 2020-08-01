@@ -3,8 +3,8 @@ class Product:
         'css': '[data-original-title="Add to Wish List"]'
     }
     compare = {
-        'css':'[data-original-title="Compare this Product"]'
+        'css': '[data-original-title="Compare this Product"]'
     }
     add_to_cart = {
-        'css':'#button-cart'
+        'css': '#button-cart'
     }

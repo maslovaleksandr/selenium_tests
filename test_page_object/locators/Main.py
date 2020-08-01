@@ -1,18 +1,11 @@
 class Main:
     class featured:
         content = {
-            'css': '#conent .row',
+            'css': '#content .row',
         }
         elements = {
-            content['css'] + ' .product-layout',
+            'css': content['css'] + ' .product-layout',
         }
         names = {
-            elements['css'] + ' h4',
+            'css': elements['css'] + ' h4',
         }
-
-    logo = {
-        'css': '#logo '
-    }
-    cart = {
-        'css': "#cart"
-    }
