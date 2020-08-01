@@ -6,7 +6,7 @@ def pytest_addoption(parser):
     parser.addoption(
         "--b",
         action="store",
-        default="chrome",
+        default="firefox",
         help="Chose your browser"
     )
     parser.addoption(
