@@ -19,7 +19,7 @@ class DefaultPage:
         return self.browser.find_elements(by, selector)[index]
 
     def _click(self, selector, index=1):
-        ActionChains(self.browser).move_to_element(self.__elements(selector, index)).click().perform()
+        self.__elements(selector, index).click()
 
     def _input(self, selector, value, index=0):
         element = self.__elements(selector, index)

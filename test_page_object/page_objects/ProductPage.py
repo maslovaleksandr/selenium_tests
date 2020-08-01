@@ -9,7 +9,7 @@ class ProductPage(DefaultPage):
         return self
 
     def add_to_cart(self):
-        self._click(Product.add_to_cart, 0)
+        self._click(Product.add_to_cart)
         return self
 
     def add_to_compare(self):
