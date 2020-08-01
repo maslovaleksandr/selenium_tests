@@ -13,3 +13,6 @@ class Main:
     logo = {
         'css': '#logo '
     }
+    cart = {
+        'css': "#cart"
+    }

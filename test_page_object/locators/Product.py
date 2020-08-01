@@ -5,3 +5,6 @@ class Product:
     compare = {
         'css':'[data-original-title="Compare this Product"]'
     }
+    add_to_cart = {
+        'css':'#button-cart'
+    }
