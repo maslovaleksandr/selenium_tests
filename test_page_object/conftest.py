@@ -12,8 +12,14 @@ def pytest_addoption(parser):
     parser.addoption(
         "--url",
         action="store",
-        default="http://192.168.0.102",
+        default="http://192.168.0.101",
         help="Insert yout URL"
+    )
+    parser.addoption(
+        "--path",
+        action="store",
+        default="/",
+        help="Url path"
     )
 
 
@@ -27,5 +33,5 @@ def browser(request):
     else:
         raise ("Browser is not supported")
     wd.implicitly_wait(5)
-    wd.get(request.config.getoption("--url"))
+    wd.get(request.config.getoption("--url") + request.config.getoption("--path"))
     return wd
